@@ -10,8 +10,8 @@ Future versions will be tagged to align with Angular releases.
     components for a polished user experience.
 - **Angular Fire:**  Seamlessly integrate Firebase services
     (authentication, database, storage, etc.) into your Angular app.
-- **Google TypeScript:**  Style Adhere to recommended coding conventions
-    for clean, consistent TypeScript code.
+- **Angular ESLint:**  Style Adhere to recommended coding conventions
+    for clean, consistent Angular code.
 - **Local Development with Emulators:**  Easily test Firebase features
     locally before deploying.
 
@@ -21,7 +21,7 @@ Future versions will be tagged to align with Angular releases.
 - **Backend:** Firebase
 - **UI Library:** Angular Material
 - **Styling:** Angular Material (with potential for customization)
-- **Code Style:** Google TypeScript Style
+- **Code Style:** Angular ESLint Style
 
 ## 🏃 Getting Started
 
