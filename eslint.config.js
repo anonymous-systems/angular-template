@@ -10,7 +10,7 @@ module.exports = tseslint.config(
       eslint.configs.recommended,
       ...tseslint.configs.recommended,
       ...tseslint.configs.stylistic,
-      ...angular.configs.tsRecommended,
+      ...angular.configs.tsAll,
     ],
     processor: angular.processInlineTemplates,
     rules: {
@@ -35,9 +35,11 @@ module.exports = tseslint.config(
   {
     files: ["**/*.html"],
     extends: [
-      ...angular.configs.templateRecommended,
-      ...angular.configs.templateAccessibility,
+      ...angular.configs.templateAll,
     ],
-    rules: {},
+    rules: {
+      "@angular-eslint/template/no-call-expression": "off",
+      "@angular-eslint/template/i18n": "off",
+    },
   }
 );

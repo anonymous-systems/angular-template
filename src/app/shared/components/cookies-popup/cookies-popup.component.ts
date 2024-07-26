@@ -9,7 +9,7 @@ import { CookiesService } from "../../services/cookies.service";
 @Component({
   selector: 'app-cookies-popup',
   templateUrl: './cookies-popup.component.html',
-  styleUrls: ['./cookies-popup.component.scss'],
+  styleUrl: './cookies-popup.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [MatAnchor, MatButton],

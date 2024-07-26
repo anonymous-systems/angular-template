@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { MatToolbar } from "@angular/material/toolbar";
 import { MatButton, MatIconButton } from "@angular/material/button";
 import { MatIcon } from "@angular/material/icon";
@@ -27,8 +27,10 @@ import { MatDivider } from "@angular/material/divider";
     MatCard, MatCardHeader, MatCardContent,
     MatCardActions, MatButton, MatCardTitle,
     MatCardSubtitle, MatMenu, MatMenuItem,
-    RouterLink, MatMenuTrigger, NgTemplateOutlet, CookiesPopupComponent, MatDivider
+    RouterLink, MatMenuTrigger, NgTemplateOutlet,
+    CookiesPopupComponent, MatDivider,
   ],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
