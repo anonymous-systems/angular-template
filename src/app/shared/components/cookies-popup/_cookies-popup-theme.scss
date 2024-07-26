@@ -3,11 +3,7 @@
 @use 'sass:map';
 @use '@angular/material' as mat;
 
-@use './shared/shared-theme' as shared;
-
-@mixin componentThemeMixins($theme) {
-  @include shared.theme($theme);
-}
+@mixin componentThemeMixins($theme) {}
 
 @mixin color($theme) {
   $has-base: mat.theme-has($theme, base);
@@ -15,6 +11,18 @@
   $has-typography: mat.theme-has($theme, typography);
   $has-density: mat.theme-has($theme, density);
   $theme-type: mat.get-theme-type($theme);
+
+  app-cookies-popup {
+    .popup {
+      box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+      background: mat.get-theme-color($theme, surface);
+      color: mat.get-theme-color($theme, on-surface);
+    }
+
+    .secondary-btn {
+      @include mat.button-color($theme, $color-variant: secondary);
+    }
+  }
 }
 
 @mixin typography($theme) {}

@@ -14,6 +14,9 @@ import { MatMenu, MatMenuItem, MatMenuTrigger } from "@angular/material/menu";
 import { GenericItem } from "./shared/interfaces/generic-item";
 import { RouterLink } from "@angular/router";
 import { NgTemplateOutlet } from "@angular/common";
+import {
+  CookiesPopupComponent
+} from "./shared/components/cookies-popup/cookies-popup.component";
 
 @Component({
   selector: 'app-root',
@@ -23,7 +26,7 @@ import { NgTemplateOutlet } from "@angular/common";
     MatCard, MatCardHeader, MatCardContent,
     MatCardActions, MatButton, MatCardTitle,
     MatCardSubtitle, MatMenu, MatMenuItem,
-    RouterLink, MatMenuTrigger, NgTemplateOutlet,
+    RouterLink, MatMenuTrigger, NgTemplateOutlet, CookiesPopupComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

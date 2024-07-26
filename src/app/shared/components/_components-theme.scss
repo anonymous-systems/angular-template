@@ -3,10 +3,10 @@
 @use 'sass:map';
 @use '@angular/material' as mat;
 
-@use './shared/shared-theme' as shared;
+@use './cookies-popup/cookies-popup-theme' as cookiesPopup;
 
 @mixin componentThemeMixins($theme) {
-  @include shared.theme($theme);
+  @include cookiesPopup.theme($theme);
 }
 
 @mixin color($theme) {
