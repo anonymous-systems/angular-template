@@ -17,6 +17,7 @@ import { NgTemplateOutlet } from "@angular/common";
 import {
   CookiesPopupComponent
 } from "./shared/components/cookies-popup/cookies-popup.component";
+import { MatDivider } from "@angular/material/divider";
 
 @Component({
   selector: 'app-root',
@@ -26,7 +27,7 @@ import {
     MatCard, MatCardHeader, MatCardContent,
     MatCardActions, MatButton, MatCardTitle,
     MatCardSubtitle, MatMenu, MatMenuItem,
-    RouterLink, MatMenuTrigger, NgTemplateOutlet, CookiesPopupComponent
+    RouterLink, MatMenuTrigger, NgTemplateOutlet, CookiesPopupComponent, MatDivider
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
