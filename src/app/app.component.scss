@@ -1,0 +1,24 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // Make container take up full viewport height
+
+  .content-wrapper {
+    padding: 20px;
+    flex: 1; // Allow content to expand and take available space
+  }
+}
+
+mat-card {
+  width: 100%;
+  max-width: 600px; // Adjust the card width as needed
+  margin: 20px auto; // Center the card horizontally
+
+  //mat-card-header {
+  //  background-color: #f5f5f5;
+  //}
+}
+
+.spacer {
+  flex: 1 1 auto; // Pushes the button to the right
+}
